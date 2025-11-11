@@ -117,7 +117,7 @@ export default function Navbar() {
             {openMore && (
               <ul className="glass-menu absolute right-0 mt-5 w-auto rounded-xl origin-top-right animate-dropdown whitespace-nowrap">
                 <li>
-                  <a href="https://plugins.astrbot.app/" className="flex items-center gap-2 px-3 py-2 hover:bg-black/[.04] dark:hover:bg-white/[.06]">
+                  <a href="https://plugins.astrbot.tech/" className="flex items-center gap-2 px-3 py-2 hover:bg-black/[.04] dark:hover:bg-white/[.06]">
                     <PuzzlePieceIcon className="w-4 h-4 opacity-80" aria-hidden />
                     <span>{t("nav.plugin")}</span>
                   </a>
