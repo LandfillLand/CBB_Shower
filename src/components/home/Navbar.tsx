@@ -163,7 +163,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://plugins.astrbot.app/" className="inline-flex items-center gap-2 h-10 px-3 rounded-full border border-ui opacity-80 hover:opacity-100 transition">
+                  <a href="https://plugins.astrbot.tech/" className="inline-flex items-center gap-2 h-10 px-3 rounded-full border border-ui opacity-80 hover:opacity-100 transition">
                     <PuzzlePieceIcon className="w-4 h-4" aria-hidden />
                     <span>{t("nav.plugin")}</span>
                   </a>
