@@ -63,7 +63,7 @@ export default function Platforms() {
                     {s.src ? (
                       <Image src={s.src} alt={`${s.label} 平台演示`} width={1200} height={800} className="max-h-full w-auto mt-2 sm:mt-4 rounded-xl px-2 object-contain" />
                     ) : (
-                      <div className="text-center text-sm opacity-80"><span>{t("platforms.vocechatSupport")}</span></div>
+                      <div className="text-center text-sm opacity-80"><span>{t("platforms.more")}</span></div>
                     )}
                   </div>
                 ))}
