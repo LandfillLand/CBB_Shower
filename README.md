@@ -12,7 +12,7 @@ A prism lets star-sparks through, rousing the dream’s soft state.
 Shattered shadows cleave the long night — peerless beauty rises now;  
 Blue crystal blooms alone, its lucid sheen reflected on the glass.  
 
-## By the way
+## By the way 👆🤓
 
 A discarded concept from the AstrBot landing page, too beautiful to be deployed.    
      
