@@ -10,7 +10,7 @@
   "community": {"title": "Thriving Community", "subtitle": "Small sparks can start a prairie fire.", "contributorsTitle": "Contributors", "contributorsNote": "Thanks to every open-source contributor.", "stars": "GitHub Stars", "forks": "GitHub Forks", "contributors": "Contributors", "plugins": "Plugins"},
   "more": {"title": "More things", "kbLabel": "Knowledge Base", "kbDesc": "Built-in AI knowledge base, zero hassle", "codeLabel": "Code Runner", "codeDesc": "Docker-based sandboxed code runner", "searchLabel": "Web Search", "searchDesc": "Bring the LLM online", "memoryLabel": "Long-term Memory", "memoryDesc": "Experimental long-term memory"},
   "carousel": {"prev": "Previous", "next": "Next"},
-  "platforms": {"title": "Multi-platform Integrations", "current": "Current", "more": "For more platform integrations, please refer to the documentation."},
+  "platforms": {"title": "Multi-platform Integrations", "current": "Current", "more": "For more platform integrations, please refer to the <a href=\"https://docs.astrbot.app/what-is-astrbot.html\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>."},
   "getStarted": {"title": "Get Started 🥳", "doc": "Read Docs", "subtitle": "Deploy quickly via Docker, pip, or Windows installer."},
   "backToTop": "Back to top",
   "business": {"title": "Business & Partnerships", "subtitle": "For business inquiries, please contact us", "contact": "community@astrbot.app"},

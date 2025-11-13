@@ -41,7 +41,7 @@ export default function Platforms() {
   }, [startAuto]);
   return (
     <section ref={sectionRef} id="features" className="min-h-[calc(100vh-64px)] flex items-center py-12 sm:py-16">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-6xl px-2 sm:px-6">
         <Reveal as="h2" className="text-center text-3xl sm:text-4xl font-semibold tracking-tight mb-6 sm:mb-8 gradient-title" delay={0}>{t("platforms.title")}</Reveal>
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           <div className="lg:col-span-2 text-center lg:text-left">
@@ -56,14 +56,14 @@ export default function Platforms() {
             </div>
           </div>
           <div className="lg:col-span-10">
-            <div className="mx-auto w-full max-w-[960px] rounded-xl border border-ui overflow-hidden bg-background/80 backdrop-blur p-4 sm:p-6">
+            <div className="mx-auto w-full max-w-[960px] rounded-xl border border-ui overflow-hidden bg-background/80 backdrop-blur p-3 sm:p-6">
               <div className="relative h-[340px] sm:h-[360px] md:h-[460px] lg:h-[560px] xl:h-[640px]">
                 {slides.map((s, i) => (
                   <div key={s.key} className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${i === index ? "opacity-100" : "opacity-0"}`} aria-hidden={i !== index}>
                     {s.src ? (
                       <Image src={s.src} alt={`${s.label} 平台演示`} width={1200} height={800} className="max-h-full w-auto mt-2 sm:mt-4 rounded-xl px-2 object-contain" />
                     ) : (
-                      <div className="text-center text-sm opacity-80"><span>{t("platforms.more")}</span></div>
+                      <div className="text-center text-base sm:text-lg opacity-80 leading-relaxed [&_a]:underline [&_a]:underline-offset-2 [&_a]:text-primary"><span dangerouslySetInnerHTML={{ __html: t("platforms.more") }} /></div>
                     )}
                   </div>
                 ))}
@@ -84,7 +84,7 @@ export default function Platforms() {
                     go(-1);
                     startAuto();
                   }}
-                  className="!absolute left-3 top-1/2 -translate-y-1/2"
+                  className="!absolute left-3 top-1/2 -translate-y-1/2 opacity-50 hover:opacity-95 transition-opacity"
                 />
                 <MorphCircleIconButton
                   as="button"
@@ -103,7 +103,7 @@ export default function Platforms() {
                     go(1);
                     startAuto();
                   }}
-                  className="!absolute right-3 top-1/2 -translate-y-1/2"
+                  className="!absolute right-3 top-1/2 -translate-y-1/2 opacity-50 hover:opacity-95 transition-opacity"
                 />
               </div>
               <div className="flex items-center justify-center gap-2 pt-4">

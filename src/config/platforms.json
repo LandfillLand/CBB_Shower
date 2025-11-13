@@ -9,5 +9,5 @@
   { "key": "slack", "label": "Slack", "src": "/show/slack_demo_1.png" },
   { "key": "discord", "label": "Discord", "src": "/show/discord_demo_1.png" },
   { "key": "kook", "label": "KOOK", "src": "/show/kook_demo_1.png" },
-  { "key": "More", "label": "More", "src": "" }
+  { "key": "More", "label": "...", "src": "" }
 ]
