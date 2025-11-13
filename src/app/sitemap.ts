@@ -28,6 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: "daily",
     priority: route === "/" ? 1 : 0.7,
-    images: route === "/" ? ["https://astrbot.tech/logo.webp"] : undefined, 
+    images: route === "/" ? [`${baseUrl}/logo.webp`] : undefined, 
   }));
 }
