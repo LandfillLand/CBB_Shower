@@ -95,7 +95,7 @@ export default function Plugins() {
               <span className="ml-3 align-middle inline-flex items-center rounded-full border border-ui px-3 py-1.5 text-base sm:text-lg leading-none">{pluginCount}</span>
             </Reveal>
             <Reveal as="p" className="text-left mt-1 sm:mt-2 text-sm opacity-80" delay={150}>{t("plugins.subtitle")}</Reveal>
-            <Reveal as="a" href="https://plugins.astrbot.app" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-1 mt-3 text-sm font-medium brand-text hover:opacity-90 transition" delay={220}>
+            <Reveal as="a" href="https://plugins.astrbot.tech" target="_blank" rel="noreferrer" className="group inline-flex items-center gap-1 mt-3 text-sm font-medium brand-text hover:opacity-90 transition" delay={220}>
               {t("plugins.moreCta")} <ArrowRightIcon className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transition-none motion-reduce:transform-none" />
             </Reveal>
           </div>
@@ -192,7 +192,7 @@ export default function Plugins() {
                   </Card>
                 ))}
                 {/** 更多插件卡片 */}
-                <Card key="more-card" className="group p-5 sm:p-6 cursor-pointer card-surface" onClick={() => window.open('https://plugins.astrbot.app', '_blank', 'noopener,noreferrer')}>
+                <Card key="more-card" className="group p-5 sm:p-6 cursor-pointer card-surface" onClick={() => window.open('https://plugins.astrbot.tech', '_blank', 'noopener,noreferrer')}>
                   <div className="relative z-10">
                     <h4 className="text-base font-semibold leading-snug line-clamp-1">{t('plugins.more')}</h4>
                     <p className="mt-3 text-sm opacity-80 line-clamp-3 min-h-[3.4rem]">{t('plugins.subtitle')}</p>
