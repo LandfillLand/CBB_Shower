@@ -24,6 +24,4 @@ export function getBaseUrl() {
 
 export const EXTERNAL_SITEMAPS = [
   "https://plugins.astrbot.tech/sitemap.xml",
-  "https://blog.astrbot.app/sitemap.xml",
-  "https://docs.astrbot.app/sitemap.xml",
 ];
