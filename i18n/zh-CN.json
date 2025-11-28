@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "AstrBot | 多平台大模型机器人基础设施",
-    "description": "AstrBot —— 快速构建、部署和管理跨平台的智能聊天机器人"
+    "title": "AstrBot | 开源一站式 Agent 聊天机器人平台",
+    "description": "AstrBot 是一个开源的一站式 Agent 聊天机器人平台，可无缝接入 QQ、企业微信、微信公众号、飞书、Telegram、钉钉、Discord 等主流即时通讯软件，为个人、开发者与团队打造可靠、可扩展的对话式智能基础设施，快速构建个人 AI 伙伴、智能客服、自动化助手与企业知识库等生产可用的 AI 应用。"
   },
   "nav": {"quickStart": "快速上手", "plugin": "插件市场", "blog": "博客", "roadmap": "路线图", "more": "更多", "github": "GitHub"},
   "hero": {"slogan": "多平台大模型机器人基础设施", "subSlogan": "多平台大模型机器人基础设施", "startButton": "开始使用", "githubButton": "GitHub"},

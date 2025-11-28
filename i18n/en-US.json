@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "AstrBot | Multi-platform LLM Bot Infrastructure",
-    "description": "AstrBot — Build, deploy, and manage cross-platform intelligent chatbots fast."
+    "title": "AstrBot | Open-Source All-in-One Agent Chatbot Platform",
+    "description": "AstrBot is an open-source Agent chatbot platform that plugs into Discord, QQ, WeCom, Feishu, Telegram, DingTalk, KOOK and more, giving individuals, developers, and teams a reliable and scalable conversational infrastructure to ship AI companions, smart support, automation assistants, and enterprise knowledge bots fast."
   },
   "nav": {"quickStart": "Quick Start", "plugin": "Plugins", "blog": "Blog", "roadmap": "Roadmap", "more": "More", "github": "GitHub"},
   "hero": {"slogan": "Multi-platform LLM Bot Infrastructure", "subSlogan": "Multi-platform LLM Bot Infrastructure", "startButton": "Get Started", "githubButton": "GitHub"},
