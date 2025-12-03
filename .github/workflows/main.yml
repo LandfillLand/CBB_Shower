@@ -39,43 +39,58 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
 
-      - name: Create orphan branch and prepare contents
+      - name: Create orphan branch and prepare contents (robust)
         run: |
           set -eux
+
+          # vars
           BRANCH="${BRANCH}"
+          SRC="${SOURCE_PATH}"
+          MSG="${COMMIT_MSG}"
+
           # create orphan branch (no history)
           if git rev-parse --verify "$BRANCH" >/dev/null 2>&1; then
-            # If branch exists locally, delete it first to ensure a clean orphan create
             git branch -D "$BRANCH" || true
           fi
           git checkout --orphan "$BRANCH"
 
-          # Remove all files from index and working tree
-          git rm -rf . || true
+          # Remove tracked files from index (but keep .git dir)
+          git rm -rf --cached . || true
+
+          # Remove all working-tree files except .git
+          # (safer than rm -rf . which may remove .git)
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 
           # If user provided a source_path, copy its contents into root of new branch
-          if [ -n "${SOURCE_PATH}" ]; then
-            if [ -d "${SOURCE_PATH}" ]; then
+          if [ -n "$SRC" ]; then
+            if [ -d "$SRC" ]; then
               # copy hidden files too
               shopt -s dotglob || true
-              cp -a "${SOURCE_PATH}/." .
+              cp -a "${SRC}/." .
             else
-              echo "source_path '${SOURCE_PATH}' not found or is not a directory; creating empty branch"
+              echo "source_path '${SRC}' not found or is not a directory; continuing with empty branch"
             fi
           fi
 
-          # ensure there is at least one file to commit
+          # Ensure at least one file exists to commit; prefer .gitkeep
           if [ -z "$(ls -A . 2>/dev/null || true)" ]; then
             echo ".gitkeep" > .gitkeep
           fi
 
+          # Stage everything explicitly
           git add -A
-          git commit -m "${COMMIT_MSG}"
+
+          # Try commit; if there's truly nothing to commit, fall back to an empty commit
+          if ! git commit -m "$MSG" ; then
+            echo "No staged changes to commit; creating an empty commit to ensure branch exists"
+            git commit --allow-empty -m "$MSG"
+          fi
 
       - name: Push clean branch to origin
-        env:
-          GIT_PUSH_ARGS: ${{ github.event.inputs.force == 'true' && '--force' || '' }}
         run: |
           set -eux
-          # Use the GITHUB_TOKEN provided to the runner; this usually works for ordinary repos.
-          git push origin "HEAD:${BRANCH}" $GIT_PUSH_ARGS
+          if [ "${FORCE_PUSH}" = "true" ]; then
+            git push origin "HEAD:${BRANCH}" --force
+          else
+            git push origin "HEAD:${BRANCH}"
+          fi
