@@ -23,5 +23,5 @@ export function getBaseUrl() {
 }
 
 export const EXTERNAL_SITEMAPS = [
-  "https://plugins.astrbot.tech/sitemap.xml",
+  "https://aaaneko.neo-life.wenturc.com/sitemap.xml",
 ];
