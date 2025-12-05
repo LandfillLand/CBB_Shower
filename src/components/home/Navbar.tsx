@@ -117,7 +117,7 @@ export default function Navbar() {
             {openMore && (
               <ul className="glass-menu absolute right-0 mt-5 w-auto rounded-xl origin-top-right animate-dropdown whitespace-nowrap">
                 <li>
-                  <a href="https://cbblover.neo-life.wenturc.com/" className="flex items-center gap-2 px-3 py-2 hover:bg-black/[.04] dark:hover:bg-white/[.06]">
+                  <a href="https://aaaneko.neo-life.wenturc.com/" className="flex items-center gap-2 px-3 py-2 hover:bg-black/[.04] dark:hover:bg-white/[.06]">
                     <PuzzlePieceIcon className="w-4 h-4 opacity-80" aria-hidden />
                     <span>{t("nav.plugin")}</span>
                   </a>
@@ -163,7 +163,7 @@ export default function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://cbblover.neo-life.wenturc.com/" className="inline-flex items-center gap-2 h-10 px-3 rounded-full border border-ui opacity-80 hover:opacity-100 transition">
+                  <a href="https://aaaneko.neo-life.wenturc.com/" className="inline-flex items-center gap-2 h-10 px-3 rounded-full border border-ui opacity-80 hover:opacity-100 transition">
                     <PuzzlePieceIcon className="w-4 h-4" aria-hidden />
                     <span>{t("nav.plugin")}</span>
                   </a>
