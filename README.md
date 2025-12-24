@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://astrbot.tech">
-    <img src="https://github.wenturc.com/Neo-Life/CBB_Lover/master/public/AstrBot_AI.png" alt="AstrBot AI" width="100%">
+  <a href="https://astrbot.qzz.io">
+    <img src="https://raw.githubusercontent.com/Neo-Life/CBB_Lover/master/public/AstrBot_AI.png" alt="AstrBot AI" width="100%">
   </a>
   
 # [Crystal Blue Bloom](https://astrbot.tech)
