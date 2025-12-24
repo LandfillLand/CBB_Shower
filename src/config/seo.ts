@@ -23,5 +23,5 @@ export function getBaseUrl() {
 }
 
 export const EXTERNAL_SITEMAPS = [
-  "https://astrbot.qzz.io/sitemap.xml",
+  "https://plugins.astrbot.qzz.io/sitemap.xml",
 ];
