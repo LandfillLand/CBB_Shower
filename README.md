@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://astrbot.qzz.io">
+  <a href="#">
     <img src="https://raw.githubusercontent.com/LandfillLand/CBB_Shower/master/public/AstrBot_AI.png" alt="AstrBot AI" width="100%">
   </a>
   
