@@ -3,7 +3,7 @@
     <img src="https://raw.githubusercontent.com/LandfillLand/CBB_Shower/master/public/AstrBot_AI.png" alt="AstrBot AI" width="100%">
   </a>
   
-# [Crystal Blue Bloom](https://plugins.astrbot.qzz.io)
+# [Crystal Blue Bloom](#)
 
 Where frost congeals in silent places, deep blue whispers of the faint and slight;  
 Not velvet-soft, nor blazing with fierce light.  
